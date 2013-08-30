@@ -1,0 +1,11 @@
+{
+    "name": "youngguns-nl/issuu-api",
+    "require": {
+        "zendframework/zend-http": "2.2.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "YoungGuns\\": "library/"
+        }
+    }
+}

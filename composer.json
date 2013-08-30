@@ -1,7 +1,8 @@
 {
     "name": "youngguns-nl/issuu-api",
+    "description": "PHP API for Issuu",
     "require": {
-        "zendframework/zend-http": "2.2.*",
+        "zendframework/zend-http": "2.2.*"
     },
     "autoload": {
         "psr-0": {

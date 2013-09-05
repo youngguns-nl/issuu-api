@@ -57,6 +57,9 @@ class ListOptions extends AbstractOptions
     protected function setStartIndex($startIndex){
         $this->startIndex = (int)$startIndex;
     }
-    
-    
+
+
+    protected function setOrgDocName($docname){
+        $this->orgDocName = $docname;
+    }
 }

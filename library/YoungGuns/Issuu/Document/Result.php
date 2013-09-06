@@ -237,6 +237,20 @@ class Result extends \YoungGuns\StdLib\PropertyAccessor {
      */
     protected $folders;
 
+
+    /**
+     *
+     * @var integer
+     */
+    protected $coverWidth;
+
+
+    /**
+     *
+     * @var integer
+     */
+    protected $coverHeight;
+
     protected function setUploadTimestamp($timestamp) {
         $this->uploadTimestamp = new \DateTime($timestamp);
         return $this;

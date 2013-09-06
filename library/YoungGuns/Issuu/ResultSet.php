@@ -7,7 +7,7 @@ namespace YoungGuns\Issuu;
  *
  * @author verweel
  */
-class ResultSet {
+class ResultSet implements \Countable{
 
 
     protected $startIndex;
@@ -28,5 +28,9 @@ class ResultSet {
     public function addResult($result)
     {
         $this->items[] = $result;
+    }
+
+    public function count() {
+        return count($this->items);
     }
 }

@@ -24,7 +24,7 @@ class Service
 
     /**
      *
-     * @return Adapter\Document
+     * @return Document
      */
     public function document()
     {

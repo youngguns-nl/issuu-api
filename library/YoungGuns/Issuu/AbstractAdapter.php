@@ -28,7 +28,11 @@ abstract class AbstractAdapter {
 
     protected function parseResponse(array $response)
     {
-        if (isset($response['rsp']) && 2 === count($response['rsp'])) {
+        if (isset($response['rsp'])) {
+            // Add empty content value
+            if (1 === count($response['rsp'])) {
+                array_unshift($response['rsp'], '');
+            }
             list($content, $status) = array_values($response['rsp']);
             switch ($status) {
                 case self::RSP_STAT_OK:

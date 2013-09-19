@@ -2,6 +2,7 @@
 
 namespace YoungGuns\Issuu;
 
+use Exception;
 
 /**
  * Description of Document

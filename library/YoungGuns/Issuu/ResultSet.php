@@ -33,4 +33,10 @@ class ResultSet implements \Countable{
     public function count() {
         return count($this->items);
     }
+
+
+    public function getItems()
+    {
+        return $this->items;
+    }
 }

@@ -46,6 +46,23 @@ class Document extends AbstractAdapter
          return $this->parseResponse($this->client->post($options));
     }
 
+
+    public function delete()
+    {
+        if (is_array($options)) {
+            $options = new Document\DeleteOptions($options);
+        }
+
+        if (!$options instanceof Document\DeleteOptions) {
+            throw new Exception(sprintf(
+                'Options must be an array or instance of DeleteOptions, got %s',
+                is_object($options) ? get_class($options) : gettype($options)
+            ));
+        }
+
+        return $this->parseResponse($this->client->post($options));
+    }
+
     protected function buildResult($content) {
         if (isset($content['document'])) {
             $document = $content['document'];

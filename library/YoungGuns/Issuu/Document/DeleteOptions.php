@@ -24,16 +24,16 @@ class DeleteOptions extends AbstractOptions {
      * 
      * @var string
      */
-    protected $name;
+    protected $names;
 
 
     /**
      *
      * @param string $url
      */
-    protected function setName($name)
+    protected function setNames($name)
     {
-        $this->name = $name;
+        $this->names = $name;
     }
 
 }

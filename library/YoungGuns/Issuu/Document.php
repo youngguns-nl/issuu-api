@@ -48,7 +48,7 @@ class Document extends AbstractAdapter
     }
 
 
-    public function delete()
+    public function delete($options = array())
     {
         if (is_array($options)) {
             $options = new Document\DeleteOptions($options);

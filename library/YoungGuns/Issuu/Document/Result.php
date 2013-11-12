@@ -243,6 +243,13 @@ class Result extends \YoungGuns\StdLib\PropertyAccessor {
      * @var integer
      */
     protected $coverWidth;
+    
+    /**
+     * Owner of document
+     *
+     * @var string
+     */
+    protected $created;
 
 
     /**

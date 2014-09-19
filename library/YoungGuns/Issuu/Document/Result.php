@@ -253,6 +253,8 @@ class Result extends \YoungGuns\StdLib\PropertyAccessor {
 
     protected $showDetectedLinks;
 
+    protected $revisionId;
+
 
     /**
      *

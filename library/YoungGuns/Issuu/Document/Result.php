@@ -255,7 +255,8 @@ class Result extends \YoungGuns\StdLib\PropertyAccessor {
 
     protected $revisionId;
 
-
+    protected $publicationId;
+    
     /**
      *
      * @var integer

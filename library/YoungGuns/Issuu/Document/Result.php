@@ -260,7 +260,9 @@ class Result extends \YoungGuns\StdLib\PropertyAccessor {
     protected $reviewed;
 
     protected $safe;
-    
+
+    protected $contentFlag;
+ 
     /**
      *
      * @var integer
